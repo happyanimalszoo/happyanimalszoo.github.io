@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зоомагазин</title>
+    <style>
+        /* Стилове на вашето усмотрение */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+        }
+
+        main {
+            padding: 20px 0;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: calc(33.33% - 20px);
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        /* Стилизация на скрола */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        /* Стилизация на заглавието "Нашето разнообразие" */
+        .title {
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .title h2 {
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 3.0rem;
+            text-shadow: 100px 120px 105px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Добре дошли в Зоомагазин "Щастливи животни"</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="за-нас.html">За нас</a></li>
+                    <li><a href="продукти.html">Продукти</a></li>
+                    <li><a href="промоции.html">Промоции</a></li>
+                    <li><a href="галерия.html">Галерия</a></li>
+                    <li><a href="контакти.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="contact" class="container">
+        <h2>Контакти</h2>
+        <p>Адрес: кв. Овча купел, бул. „Овча купел“ 1, 1618 София</p>
+        <p>Телефон: 0888 123 456</p>
+        <p>Email: info@zooshop.com</p>
+    </section>
+
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.4951152985877!2d23.267995176446725!3d42.672053415333146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa84ce770c02a3%3A0xbe6f0b4f51699a7a!2z0J_RgNC-0YTQtdGB0LjQvtC90LDQu9C90LAg0LPQuNC80L3QsNC30LjRjyDQv9C-INC10LvQtdC60YLRgNC-0YLQtdGF0L3QuNC60LAg0Lgg0LDQstGC0L7QvNCw0YLQuNC60LA!5e0!3m2!1sbg!2sbg!4v1710005388318!5m2!1sbg!2sbg" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Зоомагазин "Щастливи животни". Всички права запазени.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

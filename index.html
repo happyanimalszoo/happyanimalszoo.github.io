@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зоомагазин</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+        }
+
+        main {
+            padding: 20px 0;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: calc(33.33% - 20px);
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        /* Стилизация на скрола */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        /* Стилизация на заглавието "Нашето разнообразие" */
+        .title {
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .title h2 {
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 3.0rem;
+            text-shadow: 100px 120px 105px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Добре дошли в Зоомагазин "Щастливи животни"</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Начало</a></li>
+                    <li><a href="за-нас.html">За нас</a></li>
+                    <li><a href="продукти.html">Продукти</a></li>
+                    <li><a href="промоции.html">Промоции</a></li>
+                    <li><a href="галерия.html">Галерия</a></li>
+                    <li><a href="контакти.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="title">
+                <h2>Нашето разнообразие</h2>
+            </div>
+            <section class="products">
+                <div class="product">
+                    <img src="https://cdncloudcart.com/16398/products/images/48086/hrana-za-kuceta-pedigree-pilesko-agnesko-i-drob-image_61e6bb168f0eb_800x800.png?1642511225" alt="Храна за кучета">
+                    <h3>Храна за кучета</h3>
+                    <p>Качествена храна за кучета, предлагаща пълноценно и балансирано хранене. Формулирана с висококачествени съставки, за оптимално здраве на кучетата. Подпомага здравето на кожата, козината и храносмилателната система.</p>
+                    <button onclick="buyProduct()">Купи</button>
+                </div>
+                <div class="product">
+                    <img src="https://cdncloudcart.com/16372/products/images/25340/purina-one-adult-suha-hrana-za-kotki-s-pile-6480766971d71_800x800.jpeg?1686140641" alt="Храна за котки">
+                    <h3>Храна за котки</h3>
+                    <p>Описание на продукта за котки...</p>
+                    <button onclick="buyProduct()">Купи</button>
+                </div>
+                <div class="product">
+                    <img src="https://s13emagst.akamaized.net/products/28901/28900256/images/res_ceee5e025327f81b2753bc0523dca4b6.jpg" alt="Храна за коне">
+                    <h3>Храна за коне</h3>
+                    <p>Описание на продукта за коне...</p>
+                    <button onclick="buyProduct()">Купи</button>
+                </div>
+                <div class="product">
+                    <img src="https://daylapa.bg/image/cache/catalog/VO461403-1000x1229.jpg" alt="Храна за зайци">
+                    <h3>Храна за зайци</h3>
+                    <p>Описание на продукта за зайци...</p>
+                    <button onclick="buyProduct()">Купи</button>
+                </div>
+                <div class="product">
+                    <img src="https://petfood.bg/image/cache/catalog/little%20animals/Little%20One/hamsters-550x550.png" alt="Храна за хамстери">
+                    <h3>Храна за хамстери</h3>
+                    <p>Първокласна храна за хамстери с богато разнообразие от компоненти, научно обоснована и подходяща за дълъг и здравословен живот на любимците. Включва цинк и биотин за здрава кожа и блестяща козина, натурални пребиотици за здравословна храносмилателна система, витамино-минерален комплекс за общо благополучие и екстракт от Юка за намаляване на неприятните миризми. Използвани са 100% натурални съставки. Съдържание: пшеница, просо, сорго, ечемик, овес, слънчогледово семе, ечемичени люспи, царевични люспи, рожков, грахови люспи, пукана пшеница и още.</p>
+                    <button onclick="buyProduct()">Купи</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Зоомагазин "Щастливи животни". Всички права запазени.</p>
+        </div>
+    </footer>
+
+    <script>
+        function buyProduct() {
+            alert('Вие закупихте продукта!');
+        }
+    </script>
+</body>
+</html>
