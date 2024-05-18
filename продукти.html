@@ -31,13 +31,13 @@
                     <img src="product1.jpg" alt="Продукт 1">
                     <h3>Продукт 1</h3>
                     <p>Описание на продукта 1...</p>
-                    <button>Купи</button>
+                    <button onclick="buyProduct()">Купи</button>
                 </div>
                 <div class="product">
                     <img src="product2.jpg" alt="Продукт 2">
                     <h3>Продукт 2</h3>
                     <p>Описание на продукта 2...</p>
-                    <button>Купи</button>
+                    <button onclick="buyProduct()">Купи</button>
                 </div>
                 <!-- Можете да добавите повече продукти по ваше желание -->
             </section>
@@ -50,5 +50,10 @@
         </div>
     </footer>
 
+    <script>
+        function buyProduct() {
+            alert('Вие закупихте продукта!');
+        }
+    </script>
 </body>
 </html>
