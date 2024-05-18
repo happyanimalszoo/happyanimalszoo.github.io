@@ -1,6 +1,6 @@
 /* Общи стилове */
 
-/* Замяна на шрифта със системен шрифт на Windows 11 */
+/* Заменете шрифта със системния шрифт на Windows 11 */
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI Variable', 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
     background: url('https://cdn.wallpapersafari.com/13/45/qko5Ox.jpg') no-repeat center center fixed;
@@ -18,6 +18,16 @@ header {
     background-color: #dbffb2;
     padding: 20px 0;
 }
+
+/* Добавете стилове за логото */
+header .logo {
+    max-width: 100px; /* Променете го на подходящата за вас максимална ширина */
+    height: auto; /* Запазва пропорциите на изображението */
+    position: absolute; /* Задава абсолютно позициониране */
+    top: 10px; /* Отстояние от върха на header елемента */
+    left: 10px; /* Отстояние отляво на header елемента */
+}
+
 
 header h1 {
     margin: 0;
