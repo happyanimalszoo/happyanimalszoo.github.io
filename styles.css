@@ -118,20 +118,30 @@ footer p {
     margin: 20px 0;
 }
 
-@media only screen and (min-width: 4.00in) and (max-width: 6.73in) {
-    body {
-        font-size: 14px; /* Примерно увеличи размера на шрифта за по-добра четимост на по-малките екрани */
-    }
-
+@media only screen and (max-width: 750px) {
     .container {
-        width: 90%; /* Примерно увеличи ширината на контейнера за по-добро използване на по-малките екрани */
+        width: 90%;
     }
 
     .logo {
-        width: 120px; /* Примерно намали размера на логото за подходящо показване на по-малките екрани */
+        width: 120px;
     }
 
     .product {
-        width: calc(50% - 20px); /* Примерно промени ширината на продуктите за подходящо подреждане на по-малките екрани */
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        width: 95%;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .product {
+        width: calc(100% - 20px);
     }
 }
