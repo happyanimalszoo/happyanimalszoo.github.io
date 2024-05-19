@@ -1,20 +1,25 @@
+/* Dark Mode Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
 }
 
 header {
-    background-color: #f8f8f8;
+    background-color: #333;
     padding: 20px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #555;
 }
 
 .logo {
@@ -33,7 +38,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #ccc;
     font-weight: bold;
 }
 
@@ -58,23 +63,24 @@ main {
 }
 
 .product {
-    border: 1px solid #ddd;
+    border: 1px solid #555;
     padding: 15px;
     border-radius: 5px;
     transition: transform 0.2s;
     width: calc(25% - 20px);
     box-sizing: border-box;
+    background-color: #444;
 }
 
 .product:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .product img {
     max-width: 100%;
     height: auto;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #555;
     margin-bottom: 10px;
 }
 
@@ -84,7 +90,7 @@ main {
 
 .product p {
     font-size: 14px;
-    color: #666;
+    color: #ccc;
 }
 
 .product button {
@@ -102,46 +108,18 @@ main {
 }
 
 footer {
-    background-color: #f8f8f8;
+    background-color: #333;
     padding: 20px 0;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #555;
     text-align: center;
 }
 
 footer p {
     margin: 0;
-    color: #666;
+    color: #ccc;
 }
 
 .map-container {
     text-align: center;
     margin: 20px 0;
-}
-
-@media only screen and (max-width: 750px) {
-    .container {
-        width: 90%;
-    }
-
-    .logo {
-        width: 120px;
-    }
-
-    .product {
-        width: calc(50% - 20px);
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .container {
-        width: 95%;
-    }
-
-    .logo {
-        width: 100px;
-    }
-
-    .product {
-        width: calc(100% - 20px);
-    }
 }
