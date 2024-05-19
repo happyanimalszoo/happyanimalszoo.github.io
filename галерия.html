@@ -4,8 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Галерия - Зоомагазин "Щастливи животни"</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li a.active {
+            color: #ff6600;
+        }
+
+        main {
+            padding: 20px 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #f8f8f8;
+            padding: 20px 0;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,8 +102,9 @@
                     <li><a href="за-нас.html">За нас</a></li>
                     <li><a href="продукти.html">Продукти</a></li>
                     <li><a href="промоции.html">Промоции</a></li>
-                    <li><a href="галерия.html">Галерия</a></li>
+                    <li><a href="галерия.html" class="active">Галерия</a></li>
                     <li><a href="контакти.html">Контакти</a></li>
+                    <li><a href="кошница.html">Кошница</a></li>
                 </ul>
             </nav>
         </div>
