@@ -99,6 +99,25 @@
             margin: 0;
             color: #ccc;
         }
+
+        /* Custom Scrollbar Styles */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #333;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #555;
+            border-radius: 6px;
+            border: 3px solid #333;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #ff6600;
+        }
     
         @media only screen and (max-width: 750px) {
             .container {
